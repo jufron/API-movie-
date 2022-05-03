@@ -6,7 +6,7 @@ document.querySelector('#cari-submit').addEventListener('click', function () {
 
   // tangkap value form cari
   const cari = document.querySelector('#form-cari').value;
-  const dataURL = `http://www.omdbapi.com/?s=${cari}&apikey=${API_key}`;
+  const dataURL = `https://www.omdbapi.com/?s=${cari}&apikey=${API_key}`;
 
   fetch(dataURL)
     .then(response => response.json())
@@ -55,7 +55,7 @@ function tampilDetailMovie() {
 }
 
 function fetchDetailMovie(id_movie) {
-  return fetch(`http://www.omdbapi.com/?i=${id_movie}&apikey=${API_key}`)
+  return fetch(`https://www.omdbapi.com/?i=${id_movie}&apikey=${API_key}`)
     .then(res => res.json())
     .then(response => {
       console.log(response);
