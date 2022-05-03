@@ -32,8 +32,8 @@ function loopCard(data) {
         <div class="card col-md-3 my-2">
           <img src="${d.Poster}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h3 class="card-title">${d.Title}</h3>
-            <h5 class="card-title">${d.Year}</h5>
+            <h5 class="card-title">${d.Title}</h5>
+            <h6 class="card-title">${d.Year}</h6>
             <button id="detail" data-id="${d.imdbID}" type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailFilem">
               detail
             </button>
